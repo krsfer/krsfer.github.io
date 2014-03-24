@@ -1,0 +1,448 @@
+body                                          {
+    background           : #111;
+    text-align           : justify;
+    color                : #999;
+
+    margin               : 3px;
+    padding              : 3px;
+
+    height               : 100%;
+}
+
+
+.headerwrapper                                {
+    width                : 100%;
+    float                : left;
+
+    border-style         : solid;
+    border-top           : 0;
+    border-left          : 0;
+    border-right         : 0;
+    border-width         : 1px;
+    border-color         : #852200;
+    padding-bottom       : 3px;
+
+    background-image     : url('img/carbon-fiber-texture.png');
+}
+.header                                       {
+    /*width                : 70%;*/
+    float                : left;
+    font-family          : "Lucida Console", Monaco, monospace;
+    font-size            : small;
+}
+.header:hover                                 {
+    color                : #EB4E17;
+}
+
+#filters-sticky-wrapper                       {
+    float                : left;
+}
+#filters                                      {
+    float                : left;
+    text-align           : center;
+
+    border-style         : solid;
+    border-top           : 0;
+    border-left          : 0;
+    border-right         : 0;
+    border-width         : 1px;
+    margin-bottom        : 5px;
+
+    padding-bottom       : 6px;
+    border-color         : #852200;
+
+    width                : 100%;
+
+    background-color     : #000;
+}
+#actionnerswrapper                            {
+    float                : left;
+
+    margin-left          : 50px;
+    margin-right         : 50px;
+
+}
+#actionners                                   {
+    font-family          : "Lucida Console", Monaco, monospace;
+    font-size            : small;
+    text-align           : justify;
+}
+#actionners2                                  {
+    clear                : both;
+/*border                 : 1px solid #333;*/
+}
+
+#counter                                      {
+    font-family          : "Lucida Console", Monaco, monospace;
+    text-align           : justify;
+    font-size            : 1em;
+    color                : #852200;
+
+    position             : fixed;
+    width                : 100%;
+    left                 : 100%;
+    margin-top           : 10px;
+    margin-left          : -56px;
+}
+#resetactionners                              {
+    font-family          : "Lucida Console", Monaco, monospace;
+    text-align           : justify;
+    font-size            : x-large;
+
+    position             : fixed;
+    width                : 100%;
+    left                 : 100%;
+    margin-left          : -23px;
+}
+
+.content                                      {
+    font-family          : verdana, sans-serif;
+/*font-size              : x-small;*/
+}
+
+
+#myimg                                        {
+    position             : relative;
+    z-index              : 20;
+}
+#myimg img:first-child                        {
+    height               : 80px;
+    float                : right;
+    cursor               : crosshair;
+    -webkit-filter       : grayscale(100%);
+    -moz-filter          : grayscale(100%);
+    filter               : grayscale(100%);
+}
+#myimg img:first-child:hover                  {
+    position             : absolute;
+    height               : 280px;
+    top                  : 0px;
+    right                : 0px;
+    -webkit-filter       : grayscale(0%);
+    -moz-filter          : grayscale(0%);
+    filter               : grayscale(0%);
+}
+#logo                                         {
+    float                : right;
+    width                : 40%;
+}
+#btctext                                      {
+    float                : right;
+    margin-right         : 5px;
+    font-family          : "Lucida Console", Monaco, monospace;
+    font-size            : small;
+}
+#btctext:hover                                {
+    color                : #EB4E17;
+}
+#btcchart                                     {
+    float                : right;
+}
+#btcchart img                                 {
+    height               : 80px;
+    margin-right         : 4px;
+}
+#btcchart img:hover                           {
+    position             : absolute;
+    height               : 280px;
+    top                  : 0px;
+    right                : 82px;
+}
+#btcqrcode img                                {
+    float                : right;
+    height               : 80px;
+}
+
+
+.left                                         {
+    float                : left;
+    width                : 60%;
+}
+.theDateYounger                               {
+    color                : #852200;
+    /*color                : #0f0;*/
+}
+.theDateOlder                                 {
+    color                : #FFA62F;
+}
+.matches                                      {
+    float                : left;
+    margin-left          : 10px;
+    display              : none;
+}
+.right                                        {
+    float                : right;
+}
+.description                                  {
+    clear                : left;
+
+    line-height          : 150%;
+
+    margin-bottom        : 10px;
+
+    -moz-column-count    : 3; /* Firefox */
+    -webkit-column-count : 3; /* Safari and Chrome */
+    column-count         : 3;
+
+    -moz-column-gap      : 40px; /* Firefox */
+    -webkit-column-gap   : 40px; /* Safari and Chrome */
+    column-gap           : 40px;
+
+    -moz-column-rule     : 1px outset #333; /* Firefox */
+    -webkit-column-rule  : 1px outset #333; /* Safari and Chrome */
+    column-rule          : 1px outset #333;
+}
+.description:hover                            {
+    background-color     : #000;
+}
+
+.entry                                        {
+    float                : left;
+    width                : 100%;
+
+    background-color     : #111;
+    border-top           : 3px solid #111; /* minihack */
+    /*brder-right          : 1px solid #333;*/
+    border-bottom        : 1px solid #333;
+    border-left          : 1px solid #111;
+}
+.entryTitle                                   {
+    clear                : both;
+    text-align           : center;
+    color                : #fff;
+    font-family          : "Times New Roman", Georgia, serif;
+}
+
+.enum                                         {
+    float                : left;
+    color                : #852200;
+    padding-right        : 5px;
+}
+
+.description > .hilite                        {
+    color                : #df3a01;
+    font-weight          : bold;
+}
+
+.elision                                      {
+    color                : #222;
+}
+
+.dot                                          {
+    color                : #888;
+}
+
+.ui-dialog                                    {
+    position             : absolute;
+    top                  : 0;
+    left                 : 0;
+    padding              : 0px;
+    outline              : 0;
+    border               : 1px solid #f00;
+    background           : #000;
+    width                : 100%;
+}
+.ui-widget-header                             {
+    border               : 1px solid #f00;
+    background           : #111;
+    color                : #777;
+    font-weight          : normal;
+}
+.ui-dialog .ui-dialog-titlebar                {
+    padding              : .1em 1em;
+    position             : relative;
+}
+.ui-dialog .ui-dialog-title                   {
+    float                : left;
+    margin               : .1em 0;
+    white-space          : nowrap;
+    overflow             : hidden;
+    text-overflow        : ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close          {
+    position             : absolute;
+    right                : .3em;
+    top                  : 50%;
+    width                : 21px;
+    margin               : -10px 0 0 0;
+    padding              : 1px;
+    height               : 20px;
+}
+.ui-dialog .ui-dialog-content                 {
+    position             : relative;
+    border               : 0;
+    padding              : .5em 1em;
+    background           : #000;
+    overflow             : auto;
+    color                : #852200;
+    text-align           : justify;
+    font-size            : small;
+}
+
+a.readit                                      {
+    color                : #852200;
+}
+a.readit:visited                              {
+    color                : #551a8b;
+}
+a.readit:hover                                {
+    color                : #f00;
+}
+a.readit:focus                                {
+    outline              : thin dotted;
+}
+
+a.spreedit                                    {
+    color                : #852200;
+}
+a.spreedit:visited                            {
+    color                : #852200;
+}
+a.spreedit:hover                              {
+    color                : #f00;
+}
+a.spreedit:focus                              {
+    outline              : thin dotted;
+}
+
+a.source                                      {
+    color                : #852200;
+    padding-left:10px;
+}
+a.source:visited                              {
+    color                : #852200;
+}
+a.source:hover                                {
+    color                : #f00;
+}
+a.source:focus                                {
+    outline              : thin dotted;
+}
+
+a.act                                         {
+    color                : #852200;
+}
+a.act:link                                    {
+    text-decoration      : none;
+}
+.hilite>a.act:link                            {
+    text-decoration      : underline;
+}
+a.act:visited                                 {
+    color                : #852200;
+}
+a.act:hover                                   {
+    color                : #f00;
+}
+a.act:focus                                   {
+    outline              : thin dotted;
+}
+
+a.dlg                                         {
+    color                : #852200;
+}
+a.dlg:link                                    {
+    text-decoration      : none;
+}
+a.dlg:visited                                 {
+    color                : #852200;
+}
+a.dlg:hover                                   {
+    color                : #f00;
+}
+/*a.dlg:focus                                 {
+  outline                : thin dotted;
+}*/
+
+a#opener                                      {
+    color                : #aaa;
+}
+/*a#opener:link                               {
+  text-decoration        : none;
+}*/
+a#opener:visited                              {
+    color                : #aaa;
+}
+a#opener:hover                                {
+    color                : #f00;
+}
+
+a.react                                       {
+    color                : #852200;
+    z-index: -1;
+}
+a.react:link                                  {
+    text-decoration      : none;
+}
+a.react:visited                               {
+    color                : #852200;
+}
+a.react:hover                                 {
+    color                : #f00;
+}
+a.react:focus                                 {
+    outline              : thin dotted;
+}
+
+a.btclink                                     {
+    color                : #aaa; text-decoration: none;
+}
+a.btclink:visited                             {
+    color                : #aaa;
+}
+a.btclink:hover                               {
+    color                : #DF3A01;
+}
+a.btclink:focus                               {
+    outline              : thin dotted;
+}
+
+a.homelink                                    {
+    color                : #aaa; text-decoration: none;
+}
+a.homelink:visited                            {
+color                    : #aaa;
+}
+a.homelink:hover                              {
+    color                : #DF3A01;
+}
+a.homelink:focus                              {
+    outline              : thin dotted;
+}
+
+#wrap                                         {
+    min-height           : 100%;
+}
+#main                                         {
+    overflow             : auto;
+    padding-bottom       : 1em;  /* must be same height as the footer */
+}
+
+#fortune                                      {
+    color                : #DF3A01;
+    font-family          : "Times New Roman", Times, serif;
+    font-style           : italic;
+    font-size            : 1em;
+}
+
+#footer                                       {
+    position             : relative;
+    margin-top           : -1em; /* negative value of footer height */
+    height               : 1em;
+    clear                : both;
+    float                : right;
+
+    border-style         : solid;
+    border-bottom        : 1px;
+    border-left          : 0;
+    border-right         : 0;
+    border-width         : 1px;
+    border-color         : #852200;
+
+    padding-bottom       : 3px;
+
+    color                : #DF3A01;
+    font-family          : "Times New Roman", Times, serif;
+    font-style           : italic;
+    font-size            : 1em;
+}
