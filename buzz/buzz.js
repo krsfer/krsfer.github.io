@@ -8,8 +8,7 @@ var wrk = function(what, whatLen, ismethod1) {
         var ctx = $(this);
         var matches = ctx.text().replace("[", "").replace("]", "").trim().split(", ");
 
-        if (ismethod1) {
-            // indexOf fails when string contains a space!!
+        if (ismethod1) { // indexOf fails when string contains a space!!
             matches.forEach(function(elem) {
                 var found = false;
                 var elemLen = elem.length;
@@ -76,15 +75,9 @@ $(document).ready(function() {
 
     $('#actionners a').on('click', function(e) {
         console.log("e = " + e);
-        $('#resetactionners a').html("&#x25E9;"); // ◪ SQUARE WITH LOWER RIGHT
-        // DIAGONAL HALF BLACK
+        $('#resetactionners a').html("&#x25E9;"); // ◪ SQUARE WITH LOWER RIGHT DIAGONAL HALF BLACK
         e.preventDefault();
-        var what = $(this).text().replace("&nbsp;", " ").trim(); // what to
-        // hide.
-        // Filter to
-        // apply to
-        // each
-        // entry
+        var what = $(this).text().replace("&nbsp;", " ").trim(); // what to hide. Filter to apply to each entry
         var whatLen = what.length;
         console.log(what + " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         var divcount = $('div.entry').length;
@@ -93,15 +86,7 @@ $(document).ready(function() {
             wrk(what, whatLen, true);
         });
 
-        if (divcount === $('div.entry').filter(":hidden").size()) { // The
-            // previous
-            // routine
-            // didn't
-            // work!
-            // Why?? So
-            // try
-            // another
-            // method
+        if (divcount === $('div.entry').filter(":hidden").size()) { // The previous routine didn't work! Why?? So try another method
             console.log("Other routine");
             $('div.entry').each(function() {
                 wrk(what, whatLen, false);
@@ -112,15 +97,9 @@ $(document).ready(function() {
 
     $('#actionners2 a').on('click', function(e) {
         console.log("e = " + e);
-        $('#resetactionners a').html("&#x25E9;"); // ◪ SQUARE WITH LOWER RIGHT
-        // DIAGONAL HALF BLACK
+        $('#resetactionners a').html("&#x25E9;"); // ◪ SQUARE WITH LOWER RIGHT DIAGONAL HALF BLACK
         e.preventDefault();
-        var what = $(this).text().replace("&nbsp;", " ").trim(); // what to
-        // hide.
-        // Filter to
-        // apply to
-        // each
-        // entry
+        var what = $(this).text().replace("&nbsp;", " ").trim(); // what to hide. Filter to apply to each entry
         var whatLen = what.length;
         console.log(what + " ##############################################");
         var divcount = $('div.entry').length;
@@ -129,15 +108,7 @@ $(document).ready(function() {
             wrk(what, whatLen, true);
         });
 
-        if (divcount === $('div.entry').filter(":hidden").size()) { // The
-            // previous
-            // routine
-            // didn't
-            // work!
-            // Why?? So
-            // try
-            // another
-            // method
+        if (divcount === $('div.entry').filter(":hidden").size()) { // The previous routine didn't work! Why?? So try another method
             console.log("Other routine");
             $('div.entry').each(function() {
                 wrk(what, whatLen, false);
@@ -147,8 +118,7 @@ $(document).ready(function() {
     });
 
     $('#resetactionners a').on('click', function(e) {
-        $('#resetactionners a').html("&#x25A3;"); // ▣ WHITE SQUARE CONTAINING
-        // BLACK SMALL SQUARE
+        $('#resetactionners a').html("&#x25A3;"); // ▣ WHITE SQUARE CONTAINING BLACK SMALL SQUARE
         e.preventDefault();
         var count = 0;
         $('div.entry').each(function() {
@@ -157,8 +127,7 @@ $(document).ready(function() {
             $(this).show();
         });
         $('#counter').html(count.toString());
-
-        // console.log("animating3");
+        console.log("animating3");
         $('#counter').css({
             opacity : 0.3,
             fontSize : "10em"
@@ -227,8 +196,7 @@ function repeatloop() {
         document.getElementById("elapsed").innerHTML = calctime(document.getElementById("dltime").innerHTML) + " ago.";
         document.getElementById("projected").innerHTML = calctime(document.getElementById("nextdltime").innerHTML) + " from now.";
         timeout = setTimeout("repeatloop()", 2000); /*
-                                                     * repeat every n
-                                                     * milliseconds
+                                                     * repeat every n milliseconds
                                                      */
     }
 
