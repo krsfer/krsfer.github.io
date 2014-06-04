@@ -9,7 +9,6 @@ body                                          {
     height               : 100%;
 }
 
-
 .headerwrapper                                {
     width                : 100%;
     float                : left;
@@ -69,7 +68,7 @@ body                                          {
 }
 #actionners2                                  {
     clear                : both;
-/*border                 : 1px solid #333;*/
+    /*border                 : 1px solid #333;*/
 }
 
 #counter                                      {
@@ -97,7 +96,7 @@ body                                          {
 
 .content                                      {
     font-family          : verdana, sans-serif;
-/*font-size              : x-small;*/
+    /*font-size              : x-small;*/
 }
 
 
