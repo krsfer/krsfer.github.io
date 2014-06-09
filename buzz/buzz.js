@@ -259,12 +259,13 @@ function collapseSelectionToStart() {
     }
 }
 
+// javascript:var sel = window.getSelection? window.getSelection() : document.getSelection? document.getSelection() : document.selection.createRange().text; sel = encodeURIComponent(sel + '');sel = sel.replace(/'/g, '_*_');newdoc = open().document;newdoc.write(%22<BODY><FORM ACTION='http://www.spreeder.com/' METHOD='POST'><INPUT TYPE='hidden' NAME='passage' VALUE='%22 + sel + %22'></FORM></BODY>%22);newdoc.forms[0].submit();
 function spreed() {
     var sel = window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text;
     sel = encodeURIComponent(sel + '');
     sel = sel.replace(/'/g, '_*_');
     newdoc = open().document;
-    newdoc.write("<BODY><FORM ACTION='http://www.spreeder.com/app.php' METHOD='POST'><INPUT TYPE='hidden' NAME='passage' VALUE='" + sel + "'></FORM></BODY>");
+    newdoc.write("<BODY><FORM ACTION='http://www.spreeder.com/' METHOD='POST'><INPUT TYPE='hidden' NAME='passage' VALUE='" + sel + "'></FORM></BODY>");
     collapseSelectionToStart();
     newdoc.forms[0].submit();
 }
