@@ -259,7 +259,9 @@ function collapseSelectionToStart() {
     }
 }
 
-// javascript:var sel = window.getSelection? window.getSelection() : document.getSelection? document.getSelection() : document.selection.createRange().text; sel = encodeURIComponent(sel + '');sel = sel.replace(/'/g, '_*_');newdoc = open().document;newdoc.write(%22<BODY><FORM ACTION='http://www.spreeder.com/' METHOD='POST'><INPUT TYPE='hidden' NAME='passage' VALUE='%22 + sel + %22'></FORM></BODY>%22);newdoc.forms[0].submit();
+// http://www.spreeder.com/
+// javascript:(function(){function loadScript()%7Bvar script=document.createElement(%27script%27);script.setAttribute(%27type%27,%27text/javascript%27);script.setAttribute(%27charset%27,%27UTF-8%27);script.setAttribute(%27async%27,%27true%27);script.setAttribute(%27src%27,%27//sdk.spritzinc.com/js/1.2/bookmarklet/js/SpritzletOuter.js%27);document.documentElement.appendChild(script);script.onload=script.onreadystatechange=function()%7Bvar rs=script.readyState;if(!rs || rs===%27loaded%27 || rs===%27complete%27)%7Bscript.onload=script.onreadystatechange=null;Spritzlet.init();}};}if(window.Spritzlet)%7BSpritzlet.activate();}else%7Bwindow.Spritzlet=window.Spritzlet ||%7B};window.Spritzlet=%7Borigin:window.location.protocol+%27//%27+window.location.host,loaderVersion:1.0};loadScript();}})();
+
 function spreed() {
     var sel = window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text;
     sel = encodeURIComponent(sel + '');
