@@ -105,7 +105,7 @@ body                                          {
     z-index              : 20;
 }
 #myimg img:first-child                        {
-    height               : 80px;
+    height               : 70px;
     float                : right;
     cursor               : crosshair;
     -webkit-filter       : grayscale(100%);
@@ -123,13 +123,13 @@ body                                          {
 }
 #logo                                         {
     float                : right;
-    width                : 40%;
+    width                : 27%;
 }
 #btctext                                      {
     float                : right;
     margin-right         : 5px;
     font-family          : "Lucida Console", Monaco, monospace;
-    font-size            : small;
+    font-size            : 12px;
 }
 #btctext:hover                                {
     color                : #EB4E17;
@@ -138,7 +138,7 @@ body                                          {
     float                : right;
 }
 #btcchart img                                 {
-    height               : 80px;
+    height               : 70px;
     margin-right         : 4px;
 }
 #btcchart img:hover                           {
@@ -149,7 +149,7 @@ body                                          {
 }
 #btcqrcode img                                {
     float                : right;
-    height               : 80px;
+    height               : 70px;
 }
 
 
