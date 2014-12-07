@@ -135,7 +135,8 @@ body                                          {
     color                : #EB4E17;
 }
 #btcchart                                     {
-    float                : right;
+    /* float                : right; */
+    dispay               : none; /* !!!!!!!!!!! */
 }
 #btcchart img                                 {
     height               : 70px;
