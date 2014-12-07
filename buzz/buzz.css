@@ -136,7 +136,7 @@ body                                          {
 }
 #btcchart                                     {
     /* float                : right; */
-    dispay               : none;
+    display               : none;
 }
 #btcchart img                                 {
     height               : 70px;
